@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Palindrome.css"><!--links the style sheet to the html to give it a design-->
+    <script src="Palindrom_checker.js"></script><!--this connects the html to the java script file with the necessary function-->
+</head>
+<body>
+    <div id="nav">
+        <button id="nav-btn"> <a href="Final-CSC02.html">  Final </a></button><!--Button tha takes you back to the landing page/ final-->
+        <button id="nav-btn"><a href="User_Input_Validation.html">  User Input Validation</a> </button><!--button that takes you to the user input validation page-->
+        <button id="nav-btn"> <a href="Event.html">Event</a></button><!--button that takes you to the event page-->
+    </div>
+    <div id="box-1"><!--this hold all content in page-->
+
+        <h1>Palindrome Checker</h1><!--title or app-->
+        <p> Enter word or sentence to check if its a palindrome</p><!--description of the app or webpage-->
+    
+        <input type="text"  id="palindrome" placeholder="Enter Palendrome"> <!--input field for text -->
+        <br><!--break-->
+        <input type="submit" onclick="palin()" ><!--the submit button to check if it a palindrome-->
+        <p id="correct"></p><!--correct message-->
+        <p id="result"></p><!--displays if its a palindrome or not-->
+    </div>
+    <footer><!--page footer-->
+        Marbin Godinez  <br><!--My name-->
+        University of Advancing Technology <br><!--Name of the university-->
+        2625 W. Baseline Road <br><!--street address of the university-->
+        Tempe, AZ 85283-1056 <br><!--city and state and zip-code of the university-->
+    </footer>
+</body>
+</html>
+

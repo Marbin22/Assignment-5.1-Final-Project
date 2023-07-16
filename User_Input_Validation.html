@@ -1,0 +1,51 @@
+<!--Marbin Godinez-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="UIV.css"><!--link to the css file-->
+    <script src="UIV.js"></script><!--link to the javascript file with all the functions-->
+</head>
+<body> 
+    <div id="nav">
+        <button id="nav-btn"> <a href="Final-CSC02.html">  Final </a></button><!--Button tha takes you back to the landing page/ final project-->
+        <button id="nav-btn"><a href="Palindrome_Checker.html"> Palindrome Checker</a> </button><!--button that takes you to the palindrome checker-->
+        <button id="nav-btn"> <a href="Event.html">Event</a></button><!--button that takes you to the event page-->
+    </div>
+    <div id="form"><!--div containing all elements in page-->
+        <h1>Full Name</h1>
+        <label class="FirstName">First Name</label>
+        <br>
+        <input id="Name1" type="text" placeholder="Enter First Name Here"><!--first label and text box for first name-->
+        <br>
+        <label class="LastName">Last Name</label>
+        <br>
+        <input id="Name2" type="text" placeholder="Enter Last Name Here"><!--first label and text box for last name-->
+        <br>
+        <p id="validation"></p><!--message if the input is valid or not-->
+        <br>
+        <button onclick="check()" id="firstcheck">check</button><!--first check button-->
+            <div id="Zip-Code"> <!--div containing second part of form-->
+                <h1>Area Code</h1>
+                <label class="zip">Zipcode</label>
+                <br>
+                <input id="zipcode" type="text" placeholder="Enter Zip Code"><!--zipcode label and text box for input-->
+                <br>
+                <p id="validation1"></p><!--message if the input is valid or not-->
+                <br>
+                <button onclick="check2()" id="secondcheck">check</button><!--second check button-->
+            </div>
+        <input type="submit" id="submit" onclick="refresh()"><!--submit button and refresh page-->
+        <br>
+        <p id="secretmessage">Congrats all fields are valid </p><!--secret message that appears when all conditions are met-->
+    </div>
+    <footer><!--page footer-->
+        Marbin Godinez  <br><!--My name-->
+        University of Advancing Technology <br><!--Name of the university-->
+        2625 W. Baseline Road <br><!--street address of the university-->
+        Tempe, AZ 85283-1056 <br><!--city and state and zip-code of the university-->
+    </footer>
+</body>
+</html>

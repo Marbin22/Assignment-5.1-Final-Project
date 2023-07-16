@@ -1,0 +1,44 @@
+<!--Marbin Godinez-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="Event.js"></script><!--this connects the html to the javascript file-->
+    <link rel="stylesheet" href="Event.css"><!--his connects the html to the css-->
+</head>
+<body>
+    <div id="nav">
+        <button id="nav-btn"> <a href="Final-CSC02.html">  Final </a></button><!--Button tha takes you back to the landing page/ final project-->
+        <button id="nav-btn"><a href="User_Input_Validation.html">  User Input Validation</a> </button><!--button that takes you to the user input validation page-->
+        <button id="nav-btn"> <a href="Palindrom_checker.js"> Palindrome Checker </a></button><!--button that takes you to the palindrome checker-->
+    </div>
+    <div id="controls">  <!--contains all the button to move the image-->
+        <p>Click a button to start moving the spider</p>
+        <br>
+        <button id="Up" onclick="StartMovingUp()">&#8593; Start Moving Up &#8593;</button><!-- button that moves the image up-->
+        <br>
+        <button id="Left" onclick="StartMovingLeft()">&#8592; Start Moving Left</button><!-- button that moves the image Left-->
+        <button id="stopbutton" onclick="stop()"> Stop Moving</button><!-- button that stops the image from moving-->
+        <button id="Right" onclick="StartMovingRight()"> Start Moving Right &#8594;</button><!-- button that moves the image Right-->
+        <br>
+        <button id="Down" onclick="StartMovingDown()">	&#8595; Start Moving Down &#8595;</button><!-- button that moves the image Down-->
+
+        <div id="msg"></div><!--contains and displays the coordinates of the image-->
+    </div>
+
+
+
+    <img src="cartoon spider.jpeg" id="spider" style="position: absolute; left: 300px; top: 300px;  width:100px;"><!--the spider image on the page-->
+
+    <footer><!--page footer-->
+        Marbin Godinez  <br><!--My name-->
+        University of Advancing Technology <br><!--Name of the university-->
+        2625 W. Baseline Road <br><!--street address of the university-->
+        Tempe, AZ 85283-1056 <br><!--city and state and zip-code of the university-->
+    </footer>
+</body>
+
+</html>

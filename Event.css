@@ -1,0 +1,137 @@
+#controls {
+
+    text-align: center;
+}
+body {
+ background-color: burlywood;
+}
+p{
+    color: blue;
+    border: 1px solid black;
+    font-weight: 500;
+    font-size: 20px;
+}
+#msg{
+    margin: 10px 0px;
+    font-weight: 600;
+}
+
+#Up, #Down, #Left, #Right {
+    --bg: #000;
+    --hover-bg: #90ee90;
+    --hover-text: #000;
+    color: #fff;
+    border: 1px solid #90ee90;
+    border-radius: 4px;
+    padding: 12px 30px;
+    margin-top: 10px;
+    background: var(--bg);
+    transition: 0.2s;
+  }
+  
+  #Up:hover,#Down:hover,#Left:hover,#Right:hover {
+    color: var(--hover-text);
+    transform: translate(-0.25rem,-0.25rem);
+    background: var(--hover-bg);
+    box-shadow: 0.25rem 0.25rem var(--bg);
+  }
+  
+  #Up:active, #Down:active, #Left:active, #Right:active {
+    transform: translate(0);
+    box-shadow: none;
+  }
+  #Up:disabled, #Down:disabled, #Left:disabled, #Right:disabled{
+    color: red;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 0.8em 2em;
+    background: #dcdcdc;
+    transition: 0.2s;
+  }
+  #stopbutton {
+
+    --bg: #000;
+    --hover-bg: #f08080;
+    --hover-text: #000;
+    color: #fff;
+    border: 1px solid #f08080;
+    border-radius: 4px;
+    padding: 0.8em 2em;
+    background: var(--bg);
+    transition: 0.2s;
+  }
+  #stopbutton:hover {
+    color: var(--hover-text);
+    transform: translate(-0.25rem,-0.25rem);
+    background: var(--hover-bg);
+    box-shadow: 0.25rem 0.25rem var(--bg);
+  }
+  #stopbutton:active {
+    transform: translate(0);
+    box-shadow: none;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+       
+   }
+   #nav {
+       display: flex;
+       align-items: center;
+       text-align: center;
+       justify-content: center;
+   }
+   #nav-btn {
+     align-items: center;
+     background-color: #201e1e;
+     border: 2px solid black;
+     border-radius: 8px;
+     box-sizing: border-box;
+     margin: 15px 10px;
+     color: #F92C85;
+     cursor: pointer;
+     display: flex;
+     font-family: Inter,sans-serif;
+     font-size: 16px;
+     height: 48px;
+     justify-content: center;
+     line-height: 24px;
+     max-width: 100%;
+     padding: 0 25px;
+     position: relative;
+     text-align: center;
+     user-select: none;
+     touch-action: manipulation;
+   }
+   
+   #nav-btn:after {
+     background-color: #5d6062;
+     border-radius: 8px;
+     content: "";
+     display: block;
+     height: 48px;
+     left: 0;
+     width: 100%;
+     position: absolute;
+     top: -2px;
+     transform: translate(8px, 8px);
+     transition: transform .2s ease-out;
+     z-index: -1;
+   }
+   
+   #nav-btn:hover:after {
+     transform: translate(0, 0);
+   }
+   
+   #nav-btn:active {
+     background-color: #323232;
+     outline: 0;
+   }
+   
+   #nav-btn:hover {
+     outline: 0;
+   }
+   footer {
+    text-align: center;
+ 
+}
